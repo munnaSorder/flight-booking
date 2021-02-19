@@ -55,22 +55,20 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input value = '0' id="firstClass" class="inp-style inp-width" type="number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="" class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                    <button class="btn"></i><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    <button onclick="ticketCost(true, 'first')"  class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button><button onclick="ticketCost(false, 'first')" class="btn"></i><i class="fa fa-minus" aria-hidden="true"></i></button>
                 </div>
             </div>
             
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input id="economyClass" value="0" class="inp-style inp-width" type="number" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button id="plus" class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                    <button class="btn"></i><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    <button onclick="ticketCost(true, 'economy')" id="plus" class="btn"><i class="fa fa-plus" aria-hidden="true"></i></button><button onclick="ticketCost(false, 'economy')" class="btn"></i><i class="fa fa-minus" aria-hidden="true"></i></button>
                 </div>
             </div>
             <div class="calculations">
