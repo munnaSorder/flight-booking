@@ -1,3 +1,4 @@
+
 //ticket increase and decrease function
 function ticketCost(count, classes){
     const userClass = document.getElementById(classes+ 'Class');
@@ -39,3 +40,13 @@ function handelTicketCost(){
     document.getElementById('vat').innerText = '$' + govVat;
     document.getElementById('grandTotal').innerText = '$' + grandTotal;
 }
+
+
+document.getElementById('bookNow').addEventListener('click', function(){
+    const firstClass = document.getElementById('firstClass').value;
+    const economyClass = document.getElementById('economyClass').value;
+    const total = document.getElementById('grandTotal').innerText;
+
+
+    window.confirm('You have purchased a total of first class tickets ' + firstClass + ' and You have purchased a total of economy class tickets ' + economyClass + ' You will have the total cost ' + total);
+})
